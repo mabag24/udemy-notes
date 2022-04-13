@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML notes</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>HTML/CSS notes</h1>
+        <nav>
+            <ul>
+                <li><a href="#block-tags">Block Tags</a></li>
+                <li><a href="#inline-tags">Inline Tags</a></li>
+                <li><a href="#css-box">CSS Box Model</a></li>
+                <li><a href="#css-display">CSS Display</a></li>
+                <li><a href="#css-positioning">CSS Positioning</a></li>
+                <li><a href="#css-flexbox">CSS Flexbox</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="html-tags">
+
+        <article class="block-tags" id="block-tags">
+            <h2>Block tags</h2>
+            <ul>
+                <li>
+                    <h3><a href="https://www.w3schools.com/tags/tag_aside.asp" target="_blank">&lt;aside&gt;</a></h3>
+                    <p>Information that is related to, but seperate from the other content on a page</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.w3schools.com/tags/tag_article.asp" target="_blank">&lt;article&gt;</a>
+                    </h3>
+                    <p>A standalone piece of content that is publishable by itself e.g. a blog article</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.w3schools.com/tags/tag_section.asp" target="_blank">&lt;section&gt;</a>
+                    </h3>
+                    <p>A section of related content that can logically be grouped together, used for outlining purposes
+                    </p>
+                </li>
+                <li>
+                    <h3><a href="https://www.w3schools.com/tags/tag_figure.asp" target="_blank">&lt;figure&gt;</a> & <a
+                            href="https://www.w3schools.com/tags/tag_figcaption.asp"
+                            target="_blank">&lt;figcaption&gt;</a>
+                    </h3>
+                    <p>Groups related content together but seperately from the main content flow</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.w3schools.com/tags/tag_address.asp" target="_blank">&lt;address&gt;</a>
+                    </h3>
+                    <p>Contact Information</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.w3schools.com/tags/tag_nav.asp" target="_blank">&lt;nav&gt;</a></h3>
+                    <p>Groups together navigation elements</p>
+                </li>
+            </ul>
+        </article>
+
+        <article class="inline-tags" id="inline-tags">
+            <h2>Inline Tags</h2>
+            <ul>
+                <li>
+                    <h3><a href="https://www.w3schools.com/tags/tag_abbr.asp" target="_blank">&lt;abbr&gt;</a></h3>
+                    <p>displays text on hover to explain abbreviations or acronyms</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.w3schools.com/tags/tag_kbd.asp" target="_blank">&lt;kbd&gt;</a></h3>
+                    <p>informs user that the wrapped text should be a keyboard input</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.w3schools.com/tags/tag_blockquote.asp"
+                            target="_blank">&lt;blockquote&gt;</a> &
+                        <a href="https://www.w3schools.com/tags/tag_q.asp" target="_blank">&lt;q&gt;</a></h3>
+                    <p>informs user that the text is a quote</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.w3schools.com/tags/tag_sup.asp" target="_blank">&lt;sup&gt;</a></h3>
+                    <p>raises text for indices etc</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.w3schools.com/tags/tag_sub.asp" target="_blank">&lt;sub&gt;</a></h3>
+                    <p>lowers text for logs etc</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.w3schools.com/tags/tag_em.asp#:~:text=Definition%20and%20Usage,an%20emphasis%2C%20using%20verbal%20stress."
+                            target="_blank">&lt;em&gt;</a></h3>
+                    <p>Used to emphasise text (typically displays in italics)</p>
+                </li>
+            </ul>
+
+        </article>
+    </section>
+
+
+    <section>
+        <article class="css-content" id="css-box">
+            <h2>CSS BOX MODEL</h2>
+            <img src="data:image/png;base64,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"
+                alt="css box model diagram">
+            <aside>
+                <ul>
+                    <li><strong>Content:</strong> Text, images, etc.</li>
+                    <li><strong>Border:</strong> A line around the element, still <strong>inside</strong> the element
+                    </li>
+                    <li><strong>Padding: </strong> Invisible space around the content, <strong>indside</strong> the
+                        element
+                    </li>
+                    <li><strong>Margin: </strong> Space <strong>outside</strong> of the element, between elements</li>
+                    <li><strong>Fill Area:</strong> Area that gets filled with <strong>background color </strong> or
+                        <strong>background image</strong></li>
+                </ul>
+            </aside>
+        </article>
+
+        <article class="css-display" id="css-display">
+            <h2>CSS Display</h2>
+            <ul>
+                <li>
+                    <h3>Display: Block</h3>
+                    <p>Makes an element span the length of the page (makes the same as a full size element). Starts on a
+                        new line and can be affected by height and weight properties. Displays vertically one after
+                        another </p>
+                </li>
+                <li>
+                    <h3>Display: inline</h3>
+                    <p>Displays the element as an inline property (like span), cannot be manipulated by height/weight
+                        properties. Causes no line breaks. Only left and right margins and paddings apply</p>
+
+                </li>
+                <li>
+                    <h3>Display: flex</h3>
+                    <p>Displays element as a flex container <a href="#css-flexbox">see flexbox section</a></p>
+                </li>
+                <li>
+                    <h3>Display: Grid</h3>
+                    <p>Displays an element as a grid container. <a href="#">see grid section</a></p>
+                </li>
+                <li>
+                    <h3>Display: table</h3>
+                    <p>lets the element behave like a <a href="https://www.w3schools.com/html/html_tables.asp
+                        " target="_blank">&lt;table&gt;</a> element</p>
+                </li>
+                <li>
+                    <h3>Display: inline- ______</h3>
+                    <p>lets the element be displayed as an inline-level property, e.g inline-table or inline-grid</p>
+                </li>
+            </ul>
+        </article>
+
+        <article id="css-positioning">
+            <h2>CSS Positioning Properties</h2>
+            <ul>
+                <li>
+                    <h3>Position: relative</h3>
+                    <p>Elements are "in flow" - laid out according to their order in the HTML code. <br /> <a
+                            href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">more &rarr;</a></p>
+                </li>
+                <li>
+                    <h3>Position: absolute</h3>
+                    <p>Element is considered "out of flow". Doesn't have an impact on surrounding elements and may
+                        overlap them. Top, bottom, left or right can be used to offset the element. Set a parent element
+                        to relative to make the absolute element compared to it. <br><a
+                            href="https://www.w3schools.com/cssref/pr_class_position.asp" target="_blank"> more
+                            &rarr;</a></p>
+                </li>
+            </ul>
+        </article>
+
+        <!-- TODO::: CURRENT -->
+        <article id="css-flexbox">
+
+            <h2>Flex Container Properties</h2>
+            <ul>
+                <li>
+                    <h3>gap: <span class="flexbox-highlights">[LENGTH]</span></h3>
+                    <p>to create space between items without using margin <br><a
+                            href="https://www.w3schools.com/cssref/css3_pr_gap.asp" target="_blank">more &rarr;</a></p>
+                </li>
+                <li>
+                    <h3>justify-content: <span class="flexbox-highlights">[flex-start | flex-end | center |
+                            space-between | space-around | space-evenly]</span>
+                    </h3>
+                    <p>to align items along main axis(horizontal) <br><a
+                            href="https://www.w3schools.com/cssref/css3_pr_justify-content.asp" target="_blank">more
+                            &rarr;</a></p>
+                </li>
+                <li>
+                    <h3>align-items: <span class="flexbox-highlights">[flex-start | flex-end | center | baseline]</span>
+                    </h3>
+                    <p>to align items along the cross axis(vertically) <br><a
+                            href="https://www.w3schools.com/cssref/css3_pr_align-items.asp" target="_blank">more
+                            &rarr;</a></p>
+                </li>
+                <li>
+                    <h3>flex-direction: <span class="flexbox-highlights">[row | row-reverse | column |
+                            column-reverse]</span></h3>
+                    <p>to define which the main axis is <br><a
+                            href="https://www.w3schools.com/cssref/css3_pr_flex-direction.asp" target="_blank">more
+                            &rarr;</a></p>
+                </li>
+                <li>
+                    <h3>flex-wrap: <span class="flexbox-highlights">[nowrap | wrap | wrap-reverse]</span></h3>
+                    <p>to allow items to wrap into a new line if they are too large <br><a
+                            href="https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp" target="_blank">more
+                            &rarr;</a></p>
+                </li>
+                <li>
+                    <h3>align-content: <span class="flexbox-highlights">[stretch | flex-start | flex-end | center |
+                            space-between | space-around]</span></h3>
+                    <p>only applies when there are multiple lines <br><a
+                            href="https://www.w3schools.com/cssref/css3_pr_align-content.asp" target="_blank">more
+                            &rarr;</a></p>
+                </li>
+            </ul>
+
+            <h2>flex items</h2>
+            <ul class="flex-items">
+                <li>
+                    <h3>align-self: <span class="flexbox-highlights">[auto | stretch | flex-start | flex-end | center |
+                            baseline]</span></h3>
+                    <p>to overwrite align-items for individual flex items <br><a
+                            href="https://www.w3schools.com/cssref/css3_pr_align-self.asp" target="_blank">more
+                            &rarr;</a></p>
+                </li>
+                <li>
+                    <h3>flex-grow: <span class="flexbox-highlights">[INTEGER]</span></h3>
+                    <p>to allow an element to grow (0 = no, 1+ = yes) <br><a
+                            href="https://www.w3schools.com/cssref/css3_pr_flex-grow.asp" target="_blank">more
+                            &rarr;</a></p>
+                </li>
+                <li>
+                    <h3>flex-shrink: <span class="flexbox-highlights">[INTEGER]</span></h3>
+                    <p>to allow an element to shrink (0 = no, 1+ = yes) <br><a
+                            href="https://www.w3schools.com/cssref/css3_pr_flex-shrink.asp" target="_blank">more
+                            &rarr;</a></p>
+                </li>
+                <li>
+                    <h3>flex-basis: <span class="flexbox-highlights">[LENGTH]</span></h3>
+                    <p>to define an items width, instead of the width property <br><a
+                            href="https://www.w3schools.com/cssref/css3_pr_flex-basis.asp" target="_blank">more
+                            &rarr;</a></p>
+                </li>
+                <li>
+                    <h3>flex: 0 1 auto <span class="flexbox-highlights">[INT INT LENGTH]</span></h3>
+                    <p>recommended shortend for flex-grow, -shrink and -basis <br><a
+                            href="https://www.w3schools.com/cssref/css3_pr_flex.asp" target="_blank">more &rarr;</a></p>
+                </li>
+                <li>
+                    <h3>order:<span class="flexbox-highlights"> [INTEGER]</span></h3>
+                    <p>controls order of items. -1 makes item first, 1 makes it last <br><a
+                            href="https://www.w3schools.com/cssref/css3_pr_order.asp" target="_blank">more &rarr;</a>
+                    </p>
+                </li>
+
+            </ul>
+
+        </article>
+
+    </section>
+
+    <footer>
+        <h1>TODO:::::::</h1>
+        <h1>DO PSEUDO-ELEMENTS</h1>
+        <p>AFTER BEFORE FIRST-LINE FIRST-LETTER </p>
+        <p>PAGE AND COMPONENT LAYOUTS</p>
+        <p>FLOAT FLEXBOX AND GRID</p>
+        <p>BOX-SIZING</p>
+        <p>FLEXBOX; SET OF RELATED PROPERTIES FOR BUILING 1-DIMENSIONAL LAYOUTS ---- EMPTY SPACE IN A
+            CONTAINTER CAN BE AUTOMATICALLY DIVIDED BY ITS CHILD ELEMENTS. MAKES IT EASY TO ALIGN ITEMS TO
+            ONE ANOTHER INSIDE A PARENT CONTAINER BOTH VERTICALLY AND HORIZONTALLY. SOLVES VERTICAL
+            CENTERING AND EQUAL-HEIGHT COLUMNS </p>
+        <p>PARENT ELEMENT IS CALLED A FLEX CONTAINER, CAN BE DEFINED WITH "DISPLAY:FLEX"</p>
+    </footer>
+
+
+</body>
+
+</html>
